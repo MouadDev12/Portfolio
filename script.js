@@ -130,3 +130,26 @@
                 skillObserver.observe(card);
             });
         });
+
+
+        const map = document.getElementById("map");
+function updateMapTheme() {
+    if (body.classList.contains("theme-dark")) {
+        map.style.filter = "grayscale(1) invert(1)";
+    } else {
+        map.style.filter = "none";
+    }
+}
+
+// Appel au chargement
+updateMapTheme();
+
+// Si tu changes de thème dynamiquement
+document.getElementById("themeToggle")?.addEventListener("click", () => {
+    setTimeout(updateMapTheme, 300);
+});
+
+
+
+
+    
