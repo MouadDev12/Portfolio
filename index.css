@@ -185,6 +185,8 @@
             font-size: 3rem;
             margin-bottom: 20px;
             color: var(--text-color);
+            display: flex;
+            justify-content: center;
         }
 
         .hero h2 {
